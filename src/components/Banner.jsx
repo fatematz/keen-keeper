@@ -1,6 +1,6 @@
 import { Plus } from "lucide-react";
 
-const BannerPage = () => {
+const Banner = () => {
     return (
         <div className="container text-center space-y-[30px] py-[60px] md:py-[90px] lg:py-[120px] px-[20px] md:px-[20px] lg:px-0">
             <div className="">
@@ -38,4 +38,4 @@ relationships that matter most.</p>
     );
 };
 
-export default BannerPage;
+export default Banner;
