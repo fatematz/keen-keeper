@@ -1,4 +1,15 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.containerTwo{
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 :root {
   --background: #ffffff;
