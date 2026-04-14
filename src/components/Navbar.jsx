@@ -19,7 +19,7 @@ const Navbar=() => {
     )
 
     return (
-        <div className="">
+        <div className="border-b-2 border-gray-100">
             <div className="navbar bg-base-100  max-w-[1600px] mx-auto">
          
   <div className="navbar-start">
