@@ -1,7 +1,7 @@
 
 import {Bell, Archive, Trash2} from 'lucide-react';
 import { Phone, MessageSquare, Video } from 'lucide-react';
-import data from '../../../../public/data.json';
+import data from "@/data.json";
 
 const DetailsCard=async ({params}) => {
     const { id } = await params

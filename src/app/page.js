@@ -7,7 +7,8 @@ export default async function Home() {
   // const res = await fetch("http://localhost:3000/data.json")
   // const FriendsData=await res.json()
   
-const data = await GetFriendsData()
+  const data=await GetFriendsData()
+  
   return (
     <div className=" container pb-[60px]">
       <Banner></Banner>
