@@ -1,4 +1,7 @@
+'use client'
+import {FriendContext} from "@/context/FriendContext"
 import Link from 'next/link'
+import {useContext} from "react"
 
 const FriendsCard = ({ data }) => {
     const {id, name, picture, days_since_contact, status, tags}=data
@@ -8,6 +11,7 @@ const FriendsCard = ({ data }) => {
         'almost due': 'bg-[#febc2e] text-white',
         'on-track': 'bg-[#1a535c] text-white'
     }
+    const {AddCart} = useContext(FriendContext)
 
     return (
         <Link href={`/friends/${id}`}>

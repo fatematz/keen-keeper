@@ -2,6 +2,8 @@
 import {Bell, Archive, Trash2} from 'lucide-react';
 import { Phone, MessageSquare, Video } from 'lucide-react';
 import data from "@/data.json";
+import Link from "next/link";
+import CheckInSection from "@/components/CheckInSection";
 
 const DetailsCard=async ({params}) => {
     const { id } = await params
@@ -115,22 +117,9 @@ const DetailsCard=async ({params}) => {
                         Quick Check-In
                     </h3>
 
-                    <div className="grid grid-cols-3 gap-4 text-center">
-                        <div className="bg-white p-4 rounded-lg cursor-pointer flex justify-center items-center gap-2 ">
-                             <Phone size={24} />
-                            <p className="text-[24px]">Call</p>
-                        </div>
-
-                        <div className="bg-white p-4 rounded-lg cursor-pointer flex justify-center items-center gap-2">
-                               <MessageSquare size={24} />
-                            <p className="text-[24px]">Text</p>
-                        </div>
-
-                        <div className="bg-white p-4 rounded-lg cursor-pointer flex justify-center items-center gap-2">
-                            <Video size={24} />
-                            <p className="text-[24px]">Video</p>
-                        </div>
-                    </div>
+                    <CheckInSection friendName={friend.name} />
+                        
+                        
                 </div>
 
             </div>

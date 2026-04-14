@@ -10,7 +10,7 @@ const Navbar=() => {
     const links=(
         <>
                 <li><Link className={PathName === '/' ? 'bg-[#244D3F] text-white' : ''} href="/">  <Home size={16} /> Home </Link></li>
-                <li><Link className={PathName === '/timeline' ? 'bg-[#244D3F] text-white' : ''} href="/"> <Clock size={16}/> Timeline </Link></li>
+                <li><Link className={PathName === '/timeline' ? 'bg-[#244D3F] text-white' : ''} href="/timeline"> <Clock size={16}/> Timeline </Link></li>
                 <li><Link className={PathName === '/stats' ? 'bg-[#244D3F] text-white' : ''} href="/"> <TrendingUp size={16}/> Stats </Link></li>
         </>
     )
