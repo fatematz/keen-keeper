@@ -1,14 +1,26 @@
-import Image from "next/image";
+import Banner from "@/components/Banner";
+import FriendsCard from "@/components/FriendsCard";
+import GetFriendsData from "@/lib/GetFriendsData";
 
-export default function Home() {
+
+export default async function Home() {
+  // const res = await fetch("http://localhost:3000/data.json")
+  // const FriendsData=await res.json()
+  
+const data = await GetFriendsData()
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-4 px-16 bg-white dark:bg-black sm:items-start">
-    
-      
-     
+    <div className=" container pb-[60px]">
+      <Banner></Banner>
+      <h1 className="text-24 font-semibold pb-[20px]">Your Friends</h1>
+      <main className=" ">
+        
+        <div className="grid grid-cols-4 gap-4">
+          {data.map(data => (
+            <FriendsCard key={data.id} data={data} />
+          ))}
+        </div>
+
       </main>
     </div>
-     
   );
 }

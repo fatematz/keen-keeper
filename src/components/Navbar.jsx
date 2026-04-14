@@ -5,9 +5,6 @@ import { usePathname } from 'next/navigation'
 import { Home, Clock, TrendingUp } from "lucide-react";
 
 
-
-
-
 const Navbar=() => {
       const PathName = usePathname()
     const links=(
