@@ -1,13 +1,14 @@
 
 import {Bell, Archive, Trash2} from 'lucide-react';
 import { Phone, MessageSquare, Video } from 'lucide-react';
+import data from '../../../../public/data.json';
 
 const DetailsCard=async ({params}) => {
     const { id } = await params
 
-    const res = await fetch('http://localhost:3000/data.json')
-    const data = await res.json()
-    console.log(data)
+    // const res = await fetch('http://localhost:3000/data.json')
+    // const data = await res.json()
+    // console.log(data)
 
     const friend=data.find((f) => f.id==id)
     

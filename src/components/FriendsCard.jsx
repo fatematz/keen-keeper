@@ -24,8 +24,8 @@ const FriendsCard = ({ data }) => {
                         <h1> {name} </h1>
                     </div>
 
-                    <div className='text-[12px] text-[#64748B]'>
-                        <p> {days_since_contact}d ago </p>
+                    <div className='text-[18px] text-[#64748B]'>
+                        <p > {days_since_contact}d ago </p>
                     </div>
 
                     <div className='bg-green-300 p-2 w-[200px] rounded-2xl ml-3 text-[18px] '>
