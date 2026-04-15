@@ -32,7 +32,8 @@ const TimelinePage = () => {
 );
 
     return (
-        <div className="container py-10 max-w-2xl mx-auto">
+        <div className="container py-10 max-w-2xl ">
+            <div className="mx-[20px] md:mx-[20px] lg:mx-[20px] lg:mx-0">
             <h1 className="text-2xl font-bold mb-6">Timeline Activities</h1>
 
                <input
@@ -40,7 +41,7 @@ const TimelinePage = () => {
                 placeholder="Filter timeline..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-[347px] border rounded-lg px-4 py-2 mb-6 outline-none focus:ring-2 focus:ring-green-300"
+                className=" border rounded-lg p-2 mb-6 outline-none focus:ring-2 focus:ring-green-300"
             />
             
             <div className="flex flex-col gap-4">
@@ -69,6 +70,7 @@ const TimelinePage = () => {
                     ))
                 )}
             </div>
+        </div>
         </div>
     );
 };

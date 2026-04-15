@@ -7,10 +7,7 @@ import {FriendContext} from "./FriendContext";
 const Provider=({children}) => {
     const [cart, setCart] = useState([])
     
-    // const AddCart=(data) => {
-    // setCart([...cart, data])
-    // }
-
+    
     const AddCart = (data) => {
     setCart((prevCart) => [data, ...prevCart]); 
 };

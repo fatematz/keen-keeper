@@ -12,10 +12,12 @@ export default async function Home() {
   return (
     <div className=" container pb-[60px]">
       <Banner></Banner>
-      <h1 className="text-24 font-semibold pb-[20px]">Your Friends</h1>
+      <div className="mx-[20px] md:mx-[20px] lg:mx-[20px] xl:mx-0">
+      <h1  className="text-24 font-semibold pb-[20px]">Your Friends</h1>
+      </div>
       <main className=" ">
         
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-[20px] md:mx-[20px] lg:mx-[20px] xl:mx-0">
           {data.map(data => (
             <FriendsCard key={data.id} data={data} />
           ))}

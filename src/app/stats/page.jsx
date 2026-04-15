@@ -24,7 +24,8 @@ const StatsPage = () => {
     }));
 
     return (
-        <div className="container py-10 max-w-2xl mx-auto">
+        <div className="container py-10 max-w-2xl ">
+            <div className="mx-[20px] md:mx-[20px] lg:mx-[20px] xl:mx-0">
             <h1 className="text-2xl font-bold mb-6">Friendship Analytics</h1>
 
             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm ">
@@ -54,6 +55,7 @@ const StatsPage = () => {
                         <Legend />
                     </PieChart>
                 )}
+            </div>
             </div>
             </div>
         </div>

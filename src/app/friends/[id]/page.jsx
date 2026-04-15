@@ -21,7 +21,8 @@ const DetailsCard=async ({params}) => {
     }
 
     return (
-        <div className="grid grid-cols-2 container gap-[24px] py-[60px]">
+        <div className=" container ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-[20px] md:mx-[20px] lg:mx-[20px ] xl:mx-0 gap-[24px] py-[60px]">
             {/* <h1> {friend.name} </h1> */}
             <div className='flex flex-col gap-6 '>
                 <div className='bg-gray-100 p-4 rounded-xl text-center space-y-4'>
@@ -37,27 +38,27 @@ const DetailsCard=async ({params}) => {
                         <h1 className="text-[20px] font-semibold"> {friend.name} </h1>
                     </div>
 
-                    <div className='ml-[140px]'>
+                    <div className='flex justify-center '>
                         {/* {friend.status} */}
-                         <p className={`px-4 py-1 ml-[20px] rounded-full text-[13px] font-semibold capitalize w-[200px] shadow-sm ${statusColors[friend.status] || 'bg-gray-200'}`}> {friend.status} </p>
+                         <p className={`px-4 py-1  rounded-full text-[13px] font-semibold capitalize w-[200px] shadow-sm ${statusColors[friend.status] || 'bg-gray-200'}`}> {friend.status} </p>
                     </div>
 
-                     <div className=' flex justify-center gap-2 '>
-                        <p className="bg-green-300 p-2 rounded-2xl  text-[18px]">{friend.tags[0]}</p>
-                        <p className="bg-green-300 p-2 rounded-2xl  text-[18px]">{friend.tags[1]}</p>
+                     <div className=' flex justify-center flex-wrap gap-1 '>
+                        <p className="bg-green-300 px-3 rounded-full  text-[18px]">{friend.tags[0]}</p>
+                        <p className="bg-green-300 px-3 rounded-full  text-[18px]">{friend.tags[1]}</p>
                     </div>
 
                     <div className='text-[#64748B] italic'>{friend.bio}</div>
-                    <div className='text-[#64748B] flex justify-center gap-2 '>
+                    <div className='text-[#64748B] flex justify-center flex-wrap gap-2 '>
                        <div className="italic">
                             Preferred:
                             </div>
-                    <span className="text-black">
+                    <span className="text-black ">
                             {friend.email}
                             </span>
                     </div>
                 </div>
-                <div className="flex flex-col gap-6">
+                <div className="grid grid-cols-1  gap-6">
                     <div className="bg-gray-100 p-4 rounded-xl flex gap-2 items-center justify-center ">
                        <Bell size={20} /> Snooze 2 weeks
                     </div>
@@ -74,7 +75,7 @@ const DetailsCard=async ({params}) => {
             <div className="">
                 <div className="space-y-10">
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                     <div className="bg-gray-100 p-4 rounded-xl text-center">
                         <h2 className="text-xl font-bold"> {friend.days_since_contact} </h2>
                             <p className="text-sm text-gray-500">
@@ -101,7 +102,7 @@ const DetailsCard=async ({params}) => {
                 </div>
 
                 <div className="bg-gray-100 p-4 rounded-xl  ">
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between flex-wrap gap-2 items-center">
                         <h3 className="font-semibold">
                             Relationship Goal
                         </h3>
@@ -128,6 +129,8 @@ const DetailsCard=async ({params}) => {
             </div>
         </div>
         </div>
+        </div>
+       
     )
 }
 

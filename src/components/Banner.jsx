@@ -2,7 +2,7 @@ import { Plus } from "lucide-react";
 
 const Banner = () => {
     return (
-        <div className="container text-center space-y-[30px] py-[50px] md:py-[70px] lg:py-[90px] px-[20px] md:px-[20px] lg:px-0 ">
+        <div className="container text-center space-y-[30px] py-[50px] md:py-[70px] lg:py-[90px] px-[20px] md:px-[20px] lg:mx-[20px] xl:mx-0 ">
             <div className="">
                 <h1 className="text-[48px] font-bold">Friends to keep close in your life</h1>
             </div>
@@ -15,7 +15,7 @@ relationships that matter most.</p>
             </div>
            
   <div className="">
-    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         <div className="border-2 border-gray-100 p-7">
             <h2 className="text-[32px] font-semibold text-[#244D3F]">10</h2>
             <p className="text-[18px] text-[#64748B]">Total Friends</p>

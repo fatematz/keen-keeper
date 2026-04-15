@@ -34,7 +34,7 @@ const CheckInSection=({friendName}) => {
     
 
     return (
-        <div className="grid grid-cols-3 gap-4 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <button 
                 onClick={() => handleAdd('Call')}
                 className="bg-white p-4 rounded-lg cursor-pointer flex justify-center items-center gap-2 border hover:bg-gray-50"

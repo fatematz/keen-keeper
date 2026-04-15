@@ -39,10 +39,12 @@ const Footer = () => {
 
                    <hr className="border-t-1 border-gray-50  " />
 
-                <div className='flex justify-between pt-4 flex-wrap'>
-                    <p className="text-[#FAFAFA]">© 2026 KeenKeeper. All rights reserved.</p>
-                    <div className='flex gap-[30px] text-[#FAFAFA] flex-wrap'>
-                        <a href=''>Privacy Policy</a>
+                <div className='  flex flex-col md:flex-row justify-between items-center pt-4 gap-4  '>
+                    <div className="">
+                        <p className="text-[#FAFAFA]">© 2026 KeenKeeper. All rights reserved.</p>
+                        </div>
+                    <div className='flex justify-center flex-wrap gap-[5px] text-[#FAFAFA] '>
+                        <a  href=''>Privacy Policy</a>
                         <a href=''>Terms of Service</a>
                         <a href=''>Cookies</a>
                     </div>
