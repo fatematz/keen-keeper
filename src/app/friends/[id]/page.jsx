@@ -74,7 +74,7 @@ const DetailsCard=async ({params}) => {
             <div className="">
                 <div className="space-y-10">
 
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                     <div className="bg-gray-100 p-4 rounded-xl text-center">
                         <h2 className="text-xl font-bold"> {friend.days_since_contact} </h2>
                             <p className="text-sm text-gray-500">

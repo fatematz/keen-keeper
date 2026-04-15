@@ -40,7 +40,7 @@ const TimelinePage = () => {
                 placeholder="Filter timeline..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full border rounded-lg px-4 py-2 mb-6 outline-none focus:ring-2 focus:ring-green-300"
+                className="w-[347px] border rounded-lg px-4 py-2 mb-6 outline-none focus:ring-2 focus:ring-green-300"
             />
             
             <div className="flex flex-col gap-4">
