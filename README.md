@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🤝 KeenKeeper
 
-## Getting Started
+🔗 **Live Demo:** [keen-keeper-3icm.vercel.app](https://keen-keeper-3icm.vercel.app)
 
-First, run the development server:
+---
+
+## 📖 Description
+
+KeenKeeper is a relationship management app that helps you stay connected with the people who matter most in your life. It tracks how long it's been since you last reached out, reminds you when it's time to reconnect, and logs every interaction — so no friendship ever slips through the cracks.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Next.js 14** — App Router, file-based routing
+- **React** — Component-based UI with Context API for state management
+- **Tailwind CSS** — Utility-first styling
+- **Recharts** — Interactive pie chart for analytics
+- **React Toastify** — Toast notifications
+- **Lucide React** — Icon library
+- **Vercel** — Deployment
+
+---
+
+## ✨ Key Features
+
+### 1. 👥 Friend Tracker
+Keep a personal list of friends with details like tags, relationship goals, and how many days since your last contact. Friends are marked as **On Track**, **Almost Due**, or **Overdue** so you always know who needs attention.
+
+### 2. 📅 Interaction Timeline
+Log every check-in — whether it's a **Call**, **Text**, or **Video** — and view a full history of your interactions. Filter the timeline by interaction type to quickly find what you're looking for.
+
+### 3. 📊 Friendship Analytics
+Visual pie chart showing the breakdown of your interactions by type (Call, Text, Video). Get a clear picture of how you're staying in touch with the people in your life.
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/fatematz/keen-keeper.git
+
+# Navigate to the project folder
+cd keen-keeper
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── page.jsx        # Home page — GetFriendsData() দিয়ে data fetch করে FriendsCard এ pass করে
+│   ├── friends/        # Friend detail pages
+│   ├── timeline/       # Interaction history
+│   └── stats/          # Friendship analytics
+├── components/
+│   ├── Banner.jsx      # Home page banner
+│   └── FriendsCard.jsx # Friend card UI (data props হিসেবে নেয়)
+├── context/            # Global state (FriendContext)
+└── lib/
+    └── GetFriendsData.js  # Friend data fetch করার function # Helper functions & data
+```
 
-To learn more about Next.js, take a look at the following resources:
+<img width="1920" height="2226" alt="screencapture-localhost-3000-2026-04-15-18_37_32" src="https://github.com/user-attachments/assets/57d4eb36-8b5c-410b-8a6c-706e21406415" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
