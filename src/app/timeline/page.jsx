@@ -1,12 +1,13 @@
 
 'use client'
 import { FriendContext } from "@/context/FriendContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Phone, MessageSquare, Video } from 'lucide-react';
 
 const TimelinePage = () => {
     const {cart}=useContext(FriendContext);
     console.log("Current Cart Data:", cart);
+    const [search, setSearch] = useState('');
 
     const config = {
         Call: {
@@ -26,15 +27,27 @@ const TimelinePage = () => {
         }
     };
 
+    const filteredCart = cart.filter((item) =>
+    item.type.toLowerCase().includes(search.toLowerCase())
+);
+
     return (
         <div className="container py-10 max-w-2xl mx-auto">
             <h1 className="text-2xl font-bold mb-6">Timeline Activities</h1>
+
+               <input
+                type="text"
+                placeholder="Filter timeline..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full border rounded-lg px-4 py-2 mb-6 outline-none focus:ring-2 focus:ring-green-300"
+            />
             
             <div className="flex flex-col gap-4">
-                {cart.length === 0 ? (
+                {filteredCart.length === 0 ? (
                     <p className="text-gray-500 italic">No activities recorded yet.</p>
                 ) : (
-                    cart.map((item) => (
+                    filteredCart.map((item) => (
                         <div 
                             key={item.id} 
                             className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm transition hover:shadow-md"
@@ -52,8 +65,6 @@ const TimelinePage = () => {
                                     {item.date}
                                 </p>
                             </div>
-
-                            
                         </div>
                     ))
                 )}
