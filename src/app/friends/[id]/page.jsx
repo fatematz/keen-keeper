@@ -42,8 +42,11 @@ const DetailsCard=async ({params}) => {
                          <p className={`px-4 py-1 ml-[20px] rounded-full text-[13px] font-semibold capitalize w-[200px] shadow-sm ${statusColors[friend.status] || 'bg-gray-200'}`}> {friend.status} </p>
                     </div>
 
-                    <div className='bg-green-200 w-[200px] p-1 rounded-2xl ml-[161px]'> <p className="">
-                    {friend.tags[1]}</p> </div>
+                     <div className=' flex justify-center gap-2 '>
+                        <p className="bg-green-300 p-2 rounded-2xl  text-[18px]">{friend.tags[0]}</p>
+                        <p className="bg-green-300 p-2 rounded-2xl  text-[18px]">{friend.tags[1]}</p>
+                    </div>
+
                     <div className='text-[#64748B] italic'>{friend.bio}</div>
                     <div className='text-[#64748B] flex justify-center gap-2 '>
                        <div className="italic">

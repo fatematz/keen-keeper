@@ -32,8 +32,9 @@ const FriendsCard = ({ data }) => {
                         <p > {days_since_contact}d ago </p>
                     </div>
 
-                    <div className='bg-green-300 p-2 w-[200px] rounded-2xl ml-3 text-[18px] '>
-                        <p>{tags[1]}</p>
+                    <div className=' flex justify-center gap-2 '>
+                        <p className="bg-green-300 p-2 rounded-2xl  text-[18px]">{tags[0]}</p>
+                        <p className="bg-green-300 p-2 rounded-2xl  text-[18px]">{tags[1]}</p>
                     </div>
 
                     <p className={`px-4 py-1 ml-[13px] p-2 w-[200px] rounded-2xl rounded-full text-[13px] font-semibold capitalize text-[18px] shadow-sm ${statusColors[status] || 'bg-gray-200'}`}>

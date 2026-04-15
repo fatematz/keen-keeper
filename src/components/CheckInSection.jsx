@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { FriendContext } from "@/context/FriendContext";
 import { Phone, MessageSquare, Video } from 'lucide-react';
 import {useRouter} from 'next/navigation';
+import { toast } from 'react-toastify';
 
 const CheckInSection=({friendName}) => {
     const { AddCart } = useContext(FriendContext);
@@ -21,6 +22,12 @@ const CheckInSection=({friendName}) => {
         };
 
         AddCart(newData)
+
+         toast.success(`${type} with ${friendName}!`, {
+            position: "top-center",
+            autoClose: 3000,
+        });
+
     router.push('/timeline')
     }
 
