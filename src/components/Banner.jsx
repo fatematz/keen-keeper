@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className="container text-center space-y-[30px] py-[50px] md:py-[70px] lg:py-[90px] px-[20px] md:px-[20px] lg:mx-[20px] xl:mx-0 ">
             <div className="">
-                <h1 className="text-[48px] font-bold">Friends to keep close in your life</h1>
+                <h1 className="text-[28px] md:text-[48px] font-bold">Friends to keep close in your life</h1>
             </div>
             <div className="">
                 <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the

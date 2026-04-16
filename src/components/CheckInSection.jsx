@@ -39,21 +39,21 @@ const CheckInSection=({friendName}) => {
                 onClick={() => handleAdd('Call')}
                 className="bg-white p-4 rounded-lg cursor-pointer flex justify-center items-center gap-2 border hover:bg-gray-50"
             >
-                <Phone size={24} /> <p className="text-[20px]">Call</p>
+                <Phone  size={20} /> <p className="text-[17px] md:text-[20px]">Call</p>
             </button>
 
             <button 
                 onClick={() => handleAdd('Text')}
                 className="bg-white p-4 rounded-lg cursor-pointer flex justify-center items-center gap-2 border hover:bg-gray-50"
             >
-                <MessageSquare size={24} /> <p className="text-[20px]">Text</p>
+                <MessageSquare size={20} /> <p className="text-[17px] md:text-[20px]">Text</p>
             </button>
 
             <button 
                 onClick={() => handleAdd('Video')}
                 className="bg-white p-4 rounded-lg cursor-pointer flex justify-center items-center gap-2 border hover:bg-gray-50"
             >
-                <Video size={24} /> <p className="text-[20px]">Video</p>
+                <Video size={20} /> <p className="text-[17px] md:text-[20px]">Video</p>
             </button>
         </div>
     );
