@@ -28,7 +28,7 @@ const CheckInSection=({friendName}) => {
             autoClose: 3000,
         });
 
-    router.push('/timeline')
+    // router.push('/timeline')
     }
 
     
